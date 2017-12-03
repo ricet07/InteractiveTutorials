@@ -1,0 +1,60 @@
+﻿@{ 
+    //todo - dynamic page subheadlines
+    ViewBag.SubHeadline = "Try one of our classes today for free.";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Tutorials - CC &amp; Co.</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="container-fluid main-wrapper">
+        <div class="col-xs-12 leaderboard">
+            <h1>Interactive Tutorials</h1>
+            <div class="col-xs-12 col-sm-7 headline" style="margin-top: 20px;">
+                <p class="lead">Easiest &amp; fastest way to learn!</p>
+                <p class="lead">@ViewBag.SubHeadline</p>
+            </div>
+            <div class="col-xs-12 col-sm-5 hidden-xs">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hey! Thanks for checking out CC &amp; Co. Definitely try out one of our new tutorials! Microsoft Excel is our highest rated yet!</p>&mdash; Chris Campbell (projectsbychris) <a href="https://twitter.com/projectsbychris/status/935342562684096513?ref_src=twsrc%5Etfw">November 28, 2017</a></blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+        <div class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Tutorials", "Index", "Tutorials")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                    @*@Html.Partial("_LoginPartial")*@
+                </div>
+            </div>
+        </div>
+        <div class="row col-xs-12 body-content" style="margin: 0; padding: 0;">
+            @RenderBody()
+        </div>
+        <div class="row col-xs-12 col-sm-12 footer" style="min-height: 80px; padding:25px;margin:0;">
+            <hr />
+            <p class="small-link">&copy; @DateTime.Now.Year - CC &amp; Co<sup>&copy;</sup></p>
+            <p class="small-link">@Html.ActionLink("Home", "Index", "Home")</p>
+            <p class="small-link">@Html.ActionLink("Tutorials", "Index", "Tutorials")</p>
+            <p class="small-link">@Html.ActionLink("About", "About", "Home")</p>
+            <p class="small-link">@Html.ActionLink("Contact", "Contact", "Home")</p>
+        </div>
+    </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+
+</body>
+</html>

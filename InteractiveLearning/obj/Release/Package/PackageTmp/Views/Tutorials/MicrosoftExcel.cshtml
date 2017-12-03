@@ -1,0 +1,28 @@
+﻿@model InteractiveLearning.Models.TutorialsModels
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="excel-index">
+    <div class="col-xs-12">
+        <h1>Microsoft Excel<sup>&reg;</sup> 2010</h1>
+    </div>
+    <div class="row col-xs-12 col-sm-12">
+        <div class="col-sm-8 col-sm-right-offset-4 ">
+            <p>Excel 2010 is the spreadsheet application in the Microsoft Office 2010 suite. </p>
+            <p>Get help organizing and calculating data in these Excel 2010 tutorials.</p>
+        </div>
+    </div>
+    <div class="row col-xs-12 col-sm-8 tutorial-links">
+        @Html.ActionLink("1. Introduction to Microsoft Excel", "IntroToExcel")
+        <div class="col-xs-12"><p class="tut-descr">In this tutorial, navigate your way around and learn the very basics of what Excel can do for you! No prior experience required. All you need is the program to start.</p></div>
+    </div>
+    <div class="row col-xs-12 col-sm-8 tutorial-links">
+        @Html.ActionLink("2. Learning Cell Basics", "CellBasics")
+        <div class="col-xs-12"><p class="tut-descr">After you've figured out where everything is, this will allow you to start applying that knowledge and see what each cell can do!</p></div>
+    </div>
+    <div class="row col-xs-12 col-sm-8 tutorial-links">
+        @Html.ActionLink("3. Modifying Cells & Updating Rows/Columns", "AddingContent", "Home")
+        <div class="col-xs-12"><p class="tut-descr">Now that we know what cells are capable of, let's put that to the test. Let's add data to the cells and update our columns and rows with information.</p></div>
+    </div>
+</div>
+

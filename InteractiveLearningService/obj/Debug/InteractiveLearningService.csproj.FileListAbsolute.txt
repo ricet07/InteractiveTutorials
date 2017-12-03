@@ -1,0 +1,11 @@
+c:\users\trice.entech\documents\visual studio 2015\Projects\WebApplication1\InteractiveLearningService\bin\Debug\InteractiveLearningService.dll.config
+c:\users\trice.entech\documents\visual studio 2015\Projects\WebApplication1\InteractiveLearningService\bin\Debug\InteractiveLearningService.dll
+c:\users\trice.entech\documents\visual studio 2015\Projects\WebApplication1\InteractiveLearningService\bin\Debug\InteractiveLearningService.pdb
+c:\users\trice.entech\documents\visual studio 2015\Projects\WebApplication1\InteractiveLearningService\obj\Debug\InteractiveLearningService.csprojResolveAssemblyReference.cache
+c:\users\trice.entech\documents\visual studio 2015\Projects\WebApplication1\InteractiveLearningService\obj\Debug\InteractiveLearningService.dll
+c:\users\trice.entech\documents\visual studio 2015\Projects\WebApplication1\InteractiveLearningService\obj\Debug\InteractiveLearningService.pdb
+C:\Users\trice.ENTECH\Documents\visual studio 2015\Projects\InteractiveLearning\InteractiveLearningService\bin\Debug\InteractiveLearningService.dll.config
+C:\Users\trice.ENTECH\Documents\visual studio 2015\Projects\InteractiveLearning\InteractiveLearningService\bin\Debug\InteractiveLearningService.dll
+C:\Users\trice.ENTECH\Documents\visual studio 2015\Projects\InteractiveLearning\InteractiveLearningService\bin\Debug\InteractiveLearningService.pdb
+C:\Users\trice.ENTECH\Documents\visual studio 2015\Projects\InteractiveLearning\InteractiveLearningService\obj\Debug\InteractiveLearningService.dll
+C:\Users\trice.ENTECH\Documents\visual studio 2015\Projects\InteractiveLearning\InteractiveLearningService\obj\Debug\InteractiveLearningService.pdb

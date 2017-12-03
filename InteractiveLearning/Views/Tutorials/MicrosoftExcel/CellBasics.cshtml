@@ -1,0 +1,58 @@
+﻿@model InteractiveLearning.Models.TutorialsModels
+
+@{
+    ViewBag.SubHeadline = "";
+}
+<div class="col-xs-12 excel-101-container">
+    <h2>@Model.TutorialTitle</h2>
+    <div class="col-xs-12 excel-wrapper">
+        <p style="text-align: right; margin-right: 30px;" id="steps-count"></p>
+        @* ----- DYNAMIC STEP TEXT ----- *@
+        <div class="content-wrapper" style="min-height: 500px;">
+
+            @* ----- INTRO PIECE ----- *@
+            <div class="col-xs-12" id="step-zero">
+                @Html.Partial("MicrosoftExcel/_CellBasicsPartials/_IntroSection")
+            </div>
+
+            @* ----- STEP 1 ----- *@
+            <div class="col-xs-12 hidden" id="step-one">
+                @Html.Partial("MicrosoftExcel/_CellBasicsPartials/_Step1")
+            </div>
+
+            @* ----- STEP 2 ----- *@
+            <div class="col-xs-12 hidden" id="step-two">
+                @Html.Partial("MicrosoftExcel/_CellBasicsPartials/_Step2")
+            </div>
+
+            @* ----- STEP 3 ----- *@
+            <div class="col-xs-12 hidden" id="step-three">
+                @Html.Partial("MicrosoftExcel/_CellBasicsPartials/_Step3")
+            </div>
+
+            @* ----- STEP 4 ----- *@
+            <div class="col-xs-12 hidden" id="step-four">
+                @Html.Partial("MicrosoftExcel/_CellBasicsPartials/_Step4")
+            </div>
+
+            @* ----- CONGRATS ----- *@
+            <div class="col-xs-12 hidden" id="congrats">
+                @Html.Partial("MicrosoftExcel/_CellBasicsPartials/_Congrats")
+            </div>
+        </div>
+        @* ----- BUTTON SECTION ----- *@
+        <div class="row col-xs-12 col-sm-12" id="click-next-text" style="text-align: right;">
+            <p style="margin-right: 30px;" id="next-text">Click next to continue.</p>
+        </div>
+        <div class="row col-xs-12 button-wrapper">
+            <div class="col-sm-6" style="text-align: left;"><button class="button hidden" id="prevBtn">&lt; Go Back</button></div>
+            <div class="col-sm-6" style="text-align: right;"><button class="button" id="nextBtn">Next &gt;</button></div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 references">
+    <h3 style="font-size:16px;">References</h3>
+    <p style="font-size:14px;">Goodwill Community Foundation. (n.d.). Excel 2010: Cell Basics. Retrieved November 20, 2017, from https://www.gcflearnfree.org/excel2010/cell-basics/1/ </p>
+</div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/cellbasics")
